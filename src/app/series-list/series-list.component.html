@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th scope="col" >#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Channel</th>
+                      <th scope="col">Seasons</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr class = "clickable" *ngFor="let serie of series">
+                  <td class = "table-active font-weight-bold">{{serie.index}}</td>
+                  <td class = "table-active" style="color: #14aaf5;">{{serie.name}}</td>
+                  <td class = "table-active">{{serie.channel}}</td>
+                  <td class = "table-active">{{serie.seasons}}</td>
+               </tr>
+              </tbody>
+          </table>
+          <p>
+            Seasons average: {{promedio}}
+          </p>
+      </div>
+      <div class="col">
+          <p></p>
+      </div>
+  </div>
+</div>
