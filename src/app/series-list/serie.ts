@@ -1,6 +1,6 @@
 export class Serie
 {
-    index: number;
+    id: number;
     name: string;
     channel: string;
     seasons: number;
@@ -10,7 +10,7 @@ export class Serie
 
     constructor(pIndice: number, pName: string, pChannel: string, pSeasons: number, pSynopsis: string, pPagina: string, pFoto: string)
     {
-        this.index = pIndice;
+        this.id = pIndice;
         this.name = pName;
         this.channel = pChannel;
         this.seasons = pSeasons;
